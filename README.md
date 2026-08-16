@@ -8,12 +8,29 @@ acadêmica.
 
 | Integrante | Frente principal |
 |---|---|
-| João Pedro Angélico | *A DEFINIR* |
-| Gustavo Taques | *A DEFINIR* |
-| Luis Fernando | *A DEFINIR* |
-| Vynicyus Cândido | *A DEFINIR* |
+| João Pedro Angélico | Repositório e README; apoio em Testes/validação |
+| Gustavo Taques | Backend; apoio em Comunicação e Deploy/homologação |
+| Luis Fernando | Frontend; apoio em Backlog/cronograma |
+| Vynicyus Cândido | Arquitetura; apoio em Banco de dados |
 
-> Responsável de comunicação com professor/parceiro: *A DEFINIR*
+> Responsável de comunicação com professor/parceiro: Gustavo Taques
+>
+> Alocação inicial feita para destravar o checkpoint — a equipe pode
+> reajustar livremente conforme afinidade e carga de trabalho.
+
+### Matriz de responsabilidades por frente
+
+| Frente | Responsável principal | Apoio |
+|---|---|---|
+| Comunicação com professor/parceiro | Gustavo Taques | João Pedro Angélico |
+| Repositório e README | João Pedro Angélico | Vynicyus Cândido |
+| Arquitetura | Vynicyus Cândido | João Pedro Angélico |
+| Frontend | Luis Fernando | Gustavo Taques |
+| Backend | Gustavo Taques | Vynicyus Cândido |
+| Banco de dados | Vynicyus Cândido | Luis Fernando |
+| Backlog/cronograma | Luis Fernando | João Pedro Angélico |
+| Testes/validação | João Pedro Angélico | Gustavo Taques |
+| Deploy/homologação | Gustavo Taques | Luis Fernando |
 
 ## Problema atendido e público beneficiado
 
@@ -112,14 +129,22 @@ publiquem posts acadêmicos e interajam em um feed simples.
 Backlog inicial (priorizado): ver [tabela no checkpoint](#) ou
 `/docs/backlog.md` *(a definir onde ficará)*.
 
-1. Estrutura inicial do repositório e README
-2. Configuração do projeto Angular (frontend)
-3. Configuração do projeto Quarkus + conexão PostgreSQL
-4. Tela de login/cadastro
-5. Endpoint de autenticação JWT
-6. Feed de posts (listagem)
-7. Criação de post
-8. Tela de perfil básico
+1. Estrutura inicial do repositório e README — *João Pedro Angélico*
+2. Configuração do projeto Angular (frontend) — *Luis Fernando*
+3. Configuração do projeto Quarkus + conexão PostgreSQL — *Gustavo Taques*
+4. Tela de login/cadastro — *Luis Fernando*
+5. Endpoint de autenticação JWT — *Gustavo Taques*
+6. Feed de posts (listagem) — *Vynicyus Cândido*
+7. Criação de post — *Vynicyus Cândido*
+8. Tela de perfil básico — *Luis Fernando*
+
+## Riscos principais
+
+| Risco | Impacto | Probab. | Mitigação | Responsável |
+|---|---|---|---|---|
+| Atraso na integração frontend-backend | Alto | Média | Definir contrato de API (OpenAPI) cedo e testar endpoints isoladamente | Vynicyus Cândido |
+| Disponibilidade desigual da equipe entre aulas e outras disciplinas | Médio | Alta | Dividir backlog em tarefas pequenas e revisar progresso semanalmente | João Pedro Angélico |
+| Escopo maior que o tempo disponível até novembro | Alto | Média | Manter MVP enxuto e revisar backlog a cada sprint | Luis Fernando |
 
 ## Cronograma resumido
 
@@ -134,7 +159,8 @@ Backlog inicial (priorizado): ver [tabela no checkpoint](#) ou
 
 ## Próximos passos
 
-- Definir responsáveis por frente (matriz de responsabilidades)
-- Validar MVP, riscos e backlog com a equipe
+- Validar com a equipe a alocação de responsabilidades acima (ajustar se necessário)
+- Criar estrutura inicial de frontend (Angular) e backend (Quarkus) com código real
+- Dar acesso do repositório ao professor
 - Configurar CI/CD, testes e ambiente de deploy
 - Primeiro incremento funcional (Sprint 1)
